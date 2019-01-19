@@ -1,0 +1,222 @@
+<header>
+      <div class="header-background"></div>
+      <div class="header-mengchen"></div>
+      <div class="top">
+        <div class="logo"><img src="http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg" alt=""></div>
+        <div class="logo-text">
+          <h2>
+            <span><img src="img/brand@2x - 副本.png" alt=""></span>
+            <span class="foot">粥品香坊（回龙观）</span> 
+          </h2>
+          <p class="timer">蜂鸟专送</p>
+          <p class="decrease">
+            <span class="decrease_picture"><img src="img/decrease_1@2x.png" alt=""></span>
+            <span class="decrease_text">在线支付满28减5</span>
+          </p>
+        </div>
+      </div>
+      <div class="advertisement">
+        <span class="advertisement_picture"><img src="img/bulletin@2x - 副本.png" alt=""></span>
+        <span class="advertisement_text">粥品香坊其烹饪粥料的秘方源于中国千年古法，在融和现代制作工艺，由世界烹饪大师屈浩先生领衔研发。坚守纯天然、0添加的良心品质深得消费者青睐，发展至今成为粥类的引领品牌。是2008年奥运会和2013年园博会指定餐饮服务商。</span>
+        <span class="top-tu">&gt</span>
+      </div>
+      <div class="header-box"> 5个 &gt</div>
+    </header>
+    <nav>
+      <div class="nave">
+        <a href="##" class="on">商品</a>
+        <a href="##">评价</a>
+        <a href="##">商家</a>
+      </div>
+    </nav>
+    <div class="bigBox">
+      <aside>
+        <ul>
+          <li>热销榜</li>
+          <li class="spanLi">
+            <p>
+              <img src="img/special_3@2x.png" alt="">
+              单人精彩套餐
+            </p>
+          </li>
+          <li>冰爽饮品</li>
+          <li>精选热菜</li>
+          <li>爽口凉菜</li>
+          <li>精选套餐</li>
+          <li>果拼果汁</li>
+          <li>小吃主食</li>
+          <li>爽口凉菜</li>
+        </ul>
+      </aside>
+      <section>
+        <ul>
+          <li class="ulFirst">单人特设套餐</li>
+          <li class="ulTwo">
+            <div class="goodPicture">
+              <img src="http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750" alt="">
+            </div>
+            <div class="shop">
+              <p class="shopgood">蜂鸟专送</p>
+              <p class="shopname">咸粥</p>
+              <p class="shopbuy">
+                <span class="sale">月售1132份</span>
+                <span class="Praise">好评率100%</span>
+              </p>
+              <p class="money">
+                <span class="nowsPrice">￥24</span>
+                <span class="goesPrice">￥28</span>
+                <span class="iSpan">
+                  <i class="iconfont icon-jian"></i>
+                  <span class="SpanMount">0</span>
+                  <i class="iconfont icon-jia"></i>
+                </span>
+              </p>
+            </div>
+  
+          </li>
+        </ul>
+  
+        <ul>
+          <li class="ulFirst">单人特设套餐</li>
+          <li class="ulTwo">
+            <div class="goodPicture">
+              <img src="http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750" alt="">
+            </div>
+            <div class="shop">
+              <p class="shopgood">蜂鸟专送</p>
+              <p class="shopname">咸粥</p>
+              <p class="shopbuy">
+                <span class="sale">月售1132份</span>
+                <span class="Praise">好评率100%</span>
+              </p>
+              <p class="money">
+                <span class="nowsPrice">￥24</span>
+                <span class="goesPrice">￥28</span>
+                <span class="iSpan">
+                  <i class="iconfont icon-jian"></i>
+                  <span class="SpanMount">0</span>
+                  <i class="iconfont icon-jia"></i>
+                </span>
+              </p>
+            </div>
+          </li>
+          <li class="ulTwo">
+            <div class="goodPicture">
+              <img src="http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750" alt="">
+            </div>
+            <div class="shop">
+              <p class="shopgood">蜂鸟专送</p>
+              <p class="shopname">咸粥</p>
+              <p class="shopbuy">
+                <span class="sale">月售1132份</span>
+                <span class="Praise">好评率100%</span>
+              </p>
+              <p class="money">
+                <span class="nowsPrice">￥24</span>
+                <span class="goesPrice">￥28</span>
+              </p>
+            </div>
+          </li>
+          <li class="ulTwo">
+              <div class="goodPicture">
+                <img src="http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750" alt="">
+              </div>
+              <div class="shop">
+                <p class="shopgood">蜂鸟专送</p>
+                <p class="shopname">咸粥</p>
+                <p class="shopbuy">
+                  <span class="sale">月售1132份</span>
+                  <span class="Praise">好评率100%</span>
+                </p>
+                <p class="money">
+                  <span class="nowsPrice">￥24</span>
+                  <span class="goesPrice">￥28</span>
+                </p>
+              </div>
+            </li>
+            <li class="ulTwo">
+                <div class="goodPicture">
+                  <img src="http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750" alt="">
+                </div>
+                <div class="shop">
+                  <p class="shopgood">蜂鸟专送</p>
+                  <p class="shopname">咸粥</p>
+                  <p class="shopbuy">
+                    <span class="sale">月售1132份</span>
+                    <span class="Praise">好评率100%</span>
+                  </p>
+                  <p class="money">
+                    <span class="nowsPrice">￥24</span>
+                    <span class="goesPrice">￥28</span>
+                  </p>
+                </div>
+              </li>
+              <li class="ulTwo">
+                  <div class="goodPicture">
+                    <img src="http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750" alt="">
+                  </div>
+                  <div class="shop">
+                    <p class="shopgood">蜂鸟专送</p>
+                    <p class="shopname">咸粥</p>
+                    <p class="shopbuy">
+                      <span class="sale">月售1132份</span>
+                      <span class="Praise">好评率100%</span>
+                    </p>
+                    <p class="money">
+                      <span class="nowsPrice">￥24</span>
+                      <span class="goesPrice">￥28</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="ulTwo">
+                    <div class="goodPicture">
+                      <img src="http://fuss10.elemecdn.com/b/5f/b3b04c259d5ec9fa52e1856ee50dajpeg.jpeg?imageView2/1/w/750/h/750" alt="">
+                    </div>
+                    <div class="shop">
+                      <p class="shopgood">蜂鸟专送</p>
+                      <p class="shopname">咸粥</p>
+                      <p class="shopbuy">
+                        <span class="sale">月售1132份</span>
+                        <span class="Praise">好评率100%</span>
+                      </p>
+                      <p class="money">
+                        <span class="nowsPrice">￥24</span>
+                        <span class="goesPrice">￥28</span>
+                      </p>
+                    </div>
+                  </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <div class="footerNum">99</div>
+      <div class="footerLeft">
+        <div class="car"><i class="iconfont icon-gouwuche"></i></div>
+        <div class="footerMoney">
+          <span class="spice">￥0</span>
+          <span class="Delivery">另需配送费4元</span>
+        </div>
+      </div>
+      <div class="footerRight">￥20元起送</div>
+    </footer>
+    <!-- //蒙层 -->
+    <div class="meng">
+      <ul class="mengul">
+        <li class="menglifirst">
+          <span>购物车</span><span>清空</span>
+        </li>
+        <li class="menglitwo">
+          <div class="mengGood">
+            <p class="goodName">莲子核桃</p>
+            <p class="goodNum">
+              <span class="goodMoney">￥10</span>
+              <span class="goodSpan">
+                <i class="iconfont icon-jian"></i>
+                <span class="SpanMount">0</span>
+                <i class="iconfont icon-jia"></i>
+              </span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>

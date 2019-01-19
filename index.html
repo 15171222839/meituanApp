@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1012567_bdotun43q.css">
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+ 
+  
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="swiper.min.js"></script>
+  <script>
+    //计算比例转rem
+    document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px";
+
+    //获取数据
+    $.ajax({
+      type:"get",
+      url:"https://www.easy-mock.com/mock/5c370dadf93efc493ce9c786/meituanApp",
+      success:function(res){
+        console.log(res)
+        var divs="";
+        //头部
+        divs+="<header>";
+        divs+='<div class="header-background"></div>';
+        divs+='<div class="header-mengchen"></div>';
+        divs+='<div class="top">'
+        divs+='<div class="logo"><img src='+ res.seller.avatar +' alt=""></div>'
+        divs+='<div class="logo-text">'
+          divs+='<h2><span><img src="img/brand@2x - 副本.png" alt=""></span><span class="foot">'+ res.seller.name +'</span></h2>'
+          divs+='<p class="timer">'+ res.seller.description +'</p>'
+          divs+='<div class="swiper-container"><div class="swiper-wrapper">'
+          for(var s=0;s<res.seller.supports.length;s++){
+            divs+='<p class="decrease swiper-slide"><span class="decrease_picture "><img src="img/decrease_1@2x.png" alt=""></span><span class="decrease_text">'+ res.seller.supports[s].description +'</span></p>'
+          }
+          divs+='</div></div>'
+          
+        divs+='</div>'
+        divs+='</div>'
+        divs+='<div class="advertisement">'
+          divs+='<span class="advertisement_picture"><img src="img/bulletin@2x - 副本.png" alt=""></span>'
+          divs+='<span class="advertisement_text">' + res.seller.bulletin + '</span>'
+          divs+='<span class="top-tu">&gt</span>'
+        divs+='</div>'
+        divs+='<div class="header-box"> 5个 &gt</div>'
+        divs+="</header>";
+        //商品，评价，商家 导航
+        divs+='<nav>';
+          divs+='<div class="nave">'
+            divs+='<a href="##" class="ashopO on">商品</a>'
+            divs+='<a href="##" class="ashopT">评价</a>'
+            divs+='<a href="##" class="ashopTh">商家</a>'
+          divs+='</div>'
+        divs+='</nav>';
+        //中间部分
+        divs+='<div class="bigBox">';
+        //左边列表部分
+          divs+='<aside>'
+            divs+='<ul>'
+            for(var i=0;i<res.goods.length;i++){
+              if(i==1){
+                divs+='<li class="spanLi">'
+                divs+='<p><img src="img/special_3@2x.png" alt="">'+ res.goods[1].name +'</p>'
+                divs+='</li>'
+              }else{
+                divs+='<li>'+ res.goods[i].name +'</li>'
+              }
+            }
+            divs+='</ul>'
+          divs+='</aside>'
+          //右边商品列表
+          divs+='<section>'
+            divs+='<ul class="scrollUl">'
+              for(var k=0;k<res.goods.length;k++){
+                divs+='<li class="ulFirst">'+ res.goods[k].name +'</li>'
+                for(var j=0;j<res.goods[k].foods.length;j++){
+                  divs+='<li class="ulTwo">'
+                    divs+='<div class="goodPicture"><img src="'+ res.goods[k].foods[j].image +'" alt=""></div>'
+                    divs+='<div class="shop">'
+                      divs+='<p class="shopgood">'+ res.goods[k].foods[j].name +'</p>'
+                      divs+='<p class="shopname">'+ res.goods[k].foods[j].description +'</p>'
+                      divs+='<p class="shopbuy"><span class="sale">月售'+ res.goods[k].foods[j].sellCount +'份</span><span class="Praise">好评率100%</span></p>'
+                      divs+='<p class="money">'
+                        divs+='<span class="nowsPrice">￥'+ res.goods[k].foods[j].price +'</span>'
+                        if(res.goods[k].foods[j].oldPrice){
+                          divs+='<span class="goesPrice">￥'+ res.goods[k].foods[j].oldPrice +'</span>'
+                        }
+                        divs+='<span class="iSpan"><i class="iconfont icon-jian"></i><span class="SpanMount">0</span><i class="iconfont icon-jia"></i></span>'
+                      divs+='</p>'
+                    divs+='</div>'
+                  divs+='</li>'
+                }
+              } 
+            divs+='</ul>'
+          divs+='</section>'
+        divs+='</div>';
+        // //评价
+        divs+='<div class="bigBoxx">'
+          divs+='<div class="assessFen">'
+            divs+='<div class="assessLeft">'
+              divs+='<p class="assessThree">3.9</p>'
+              divs+='<p class="assessAll">综合评分</p>'
+              divs+='<p class="assessShop">高于周边商家69.2%</p>'
+            divs+='</div>'
+            divs+='<div class="assessRight">'
+              divs+='<div class="SpOne">'
+                divs+='<div class="Spdiv">服务态度</div>'
+                divs+='<div class="start">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_off@2x.png" alt="">'
+                divs+='</div>'
+                divs+='<div class="startGold">3.9</div>'
+              divs+='</div>'
+              divs+='<div class="SpOne SpTwo">'
+                divs+='<div class="Spdiv">服务态度</div>'
+                divs+='<div class="start">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_on@2x.png" alt="">'
+                  divs+='<img src="img/star36_off@2x.png" alt="">'
+                divs+='</div>'
+                divs+='<div class="startGold">4.0</div>'
+              divs+='</div>'
+              divs+='<div class="SpThree">'
+                divs+='<div class="Spdiv">送达时间</div>'
+                divs+='<div class="Spdivtwo">44分钟</div>'
+              divs+='</div>'
+            divs+='</div>'
+          divs+='</div>'
+          divs+='<div class="kong"></div>'
+          divs+='<div class="evaluate">'
+            divs+='<div class="evaluate_top">'
+              divs+='<span class="all">全部57</span>'
+              divs+='<span class="satisfaction">满意47</span>'
+              divs+='<span class="nosatisfaction">不满意10</span>'
+            divs+='</div>'
+            divs+='<div class="evaluate_bottom">'
+              divs+='<p class="iconfont icon-ok">&nbsp; 只看有内容的评价</p>'
+            divs+='</div>'
+            divs+='<ul class="evaluateul">'
+              divs+='<li class="evaluateli">'
+                divs+='<div class="evaluateliOne"><img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="" ></div>'
+                divs+='<div class="evaluateliTwo">'
+                  divs+='<p class="evaluatePone">'
+                    divs+='<span class="pSpanc">3******c</span>'
+                    divs+='<span class="pSpans">2019-01-12 20:22</span>'
+                  divs+='</p>'
+                  divs+='<p class="evaluatePtwo">'
+                    divs+='<span>'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_off@2x.png" alt="">'
+                    divs+='</span>'
+                    divs+='<span>80分钟送达</span>'
+                    divs+='</p>'
+                    divs+='<p class="evaluatePthree">不错,粥很好喝,我经常吃这一家,非常赞,以后也会常来吃,强烈推荐.我骗你我就是傻逼！</p>'
+                    divs+='<p class="evaluatePfour">'
+                      divs+='<i class="iconfont icon-dianzan11"></i>'
+                      divs+='<span>大为香菇卤...</span>'
+                      divs+='<span>大为香菇卤...</span>'
+                      divs+='<span>大为香菇卤...</span>'
+                divs+='</p></div></li>'
+                divs+='<li class="evaluateli">'
+                divs+='<div class="evaluateliOne"><img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="" ></div>'
+                divs+='<div class="evaluateliTwo">'
+                  divs+='<p class="evaluatePone">'
+                    divs+='<span class="pSpanc">3******c</span>'
+                    divs+='<span class="pSpans">2019-01-12 20:22</span>'
+                  divs+='</p>'
+                  divs+='<p class="evaluatePtwo">'
+                    divs+='<span>'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_on@2x.png" alt="">'
+                      divs+='<img src="img/star36_off@2x.png" alt="">'
+                    divs+='</span>'
+                    divs+='<span>80分钟送达</span>'
+                    divs+='</p>'
+                    divs+='<p class="evaluatePthree">不错,粥很好喝,我经常吃这一家,非常赞,以后也会常来吃,强烈推荐.我骗你我就是傻逼！</p>'
+                    divs+='<p class="evaluatePfour">'
+                      divs+='<i class="iconfont icon-dianzan11"></i>'
+                      divs+='<span>大为香菇卤...</span>'
+                      divs+='<span>大为香菇卤...</span>'
+                      divs+='<span>大为香菇卤...</span>'
+                divs+='</p></div></li>'
+        divs+='</ul></div></div>'
+              
+        // //商家
+        divs+='<div class="shopThree">'
+          divs+='<div class="shopTop">'
+            divs+='<div class="shopdivOne">'
+              divs+='<p class="shopdivP">'
+                divs+='<span>粥品香坊（回龙观）</span>'
+                divs+='<span class="iconfont icon-hongxin"></span>'
+              divs+='</p>'
+              divs+='<div class="shopdivDiv"><div class="shopdivLeft">'
+                divs+='<div class="Spanstart">'
+                  divs+='<img src="img/star36_on@2x.png" alt=""><img src="img/star36_on@2x.png" alt=""><img src="img/star36_on@2x.png" alt=""><img src="img/star36_on@2x.png" alt=""><img src="img/star36_off@2x.png" alt="">'
+                divs+='</div>'
+                divs+='<div class="Spdiv">(661)</div>'
+                divs+='<div class="startGold">月售690单</div>'
+              divs+='</div>'
+              divs+='<div class="shopdivRight">已收藏</div>'
+          divs+='</div></div>'
+          divs+='<div class="shopdivTwo">'
+            divs+='<div class="shop20"><p>起送价</p><p><span>20</span>元</p></div>'
+            divs+='<div class="shop4"><p>商家配送</p><p><span>4</span>元</p></div>'
+            divs+='<div class="shop39"><p>平均配送时间</p><p><span>39</span>元</p></div>'
+          divs+='</div>'
+        divs+='</div>'
+        divs+='<div class="kong"></div>'
+        divs+='<div class="active">'
+          divs+='<div class="mengDiv3"><ul class="meng-ul"><li>公告与活动</li><li>粥品香坊其烹饪粥料的秘方源于中国千年古法，在融和现代制作工艺，由世界烹饪大师屈浩先生领衔研发。坚守纯天然、0添加的良心品质深得消费者青睐，发展至今成为粥类的引领品牌。是2008年奥运会和2013年园博会指定餐饮服务商。</li></ul></div>'
+        divs+='</div>'
+        divs+='<div class="mengDiv2">'
+          divs+='<ul class="meng_ul">'
+            divs+='<li class="meng_li"><p><img src="img/decrease_2@2x.png" alt=""></p><p>在线支付满28减5,满50减10</p></li>'
+            divs+='<li><p><img src="img/discount_2@2x.png" alt=""></p><p>单人精彩赛</p></li>'
+            divs+='<li><p><img src="img/discount_2@2x.png" alt=""></p><p>清肺雪梨汤8折抢购</p></li>'
+            divs+='<li><p><img src="img/special_2@2x.png" alt=""></p><p>特价饮品八折抢购</p></li>'
+            divs+='<li><p><img src="img/special_2@2x.png" alt=""></p><p>单人特设套餐</p></li>'
+            divs+='<li><p><img src="img/discount_2@2x.png" alt=""></p><p>清肺雪梨汤8折抢购</p></li>'
+            divs+='<li><p><img src="img/special_2@2x.png" alt=""></p><p>特价饮品八折抢购</p></li>'
+          divs+='</ul>'
+        divs+='</div>'
+        divs+='<div class="spec6_picture">'
+          divs+='<ul class="swiper-containe">'
+            divs+='<li>商家实景</li>'
+            divs+='<li class="swiper-wrapper">'
+              divs+='<p class="swiper-slide"><img src="img/4.jpg" alt=""></p>'
+              divs+='<p class="swiper-slide"><img src="img/5.jpg" alt=""></p>'
+              divs+='<p class="swiper-slide"><img src="img/6.jpg" alt=""></p>'
+              divs+='<p class="swiper-slide"><img src="img/4.jpg" alt=""></p>'
+        divs+='</li></ul></div>'   
+        divs+='<div class="kong"></div>'
+        // <!-- 商家信息 -->
+        divs+='<div class="shopnews">'
+          divs+='<ul>'
+            divs+='<li>商家信息</li>'
+            divs+='<li>该商家支持开发票, 请在下单时填写好发票抬头</li>'
+            divs+='<li>品类:其他菜系,包子粥店</li>'
+            divs+='<li>地址:北京市昌平区回龙观西大街龙观置业大厦底商B座102单元1340</li>'
+            divs+='<li>营业时间:10:00-20:30</li>'
+        divs+='</ul></div></div>'
+        //底部 购物车
+        divs+='<footer>'
+          divs+='<div class="footerNum">99</div>'
+          divs+='<div class="footerLeft">'
+            divs+='<div class="car"><i class="iconfont icon-gouwuche"></i></div>'
+            divs+='<div class="footerMoney"><span class="spice">￥0</span><span class="Delivery">另需配送费4元</span></div>'
+          divs+='</div>'
+          divs+='<div class="footerRight">￥20元起送</div>'
+        divs+='</footer>'
+        // 购物车蒙层
+        divs+='<div class="meng">'
+          divs+='<ul class="mengul">'
+            divs+='<li class="menglifirst"><span class="mengshop">购物车</span><span class="Spanmove">清空</span></li>'
+            for(var k=0;k<res.goods.length;k++){
+              for(var j=0;j<res.goods[k].foods.length;j++){
+                divs+='<li class="menglitwo">'
+                  divs+='<div class="mengGood">'
+                    divs+='<p class="goodName">'+ res.goods[k].foods[j].name +'</p>'
+                    divs+='<p class="goodNum">'
+                      divs+='<span class="goodMoney">￥'+ res.goods[k].foods[j].price +'</span>'
+                      divs+='<span class="goodSpan"><i class="iconfont icon-jian"></i><span class="SpanMount">0</span><i class="iconfont icon-jia"></i></span>'
+                    divs+='</p>'
+                  divs+='</div>'
+                divs+='</li>'
+              }
+            }
+          divs+='</ul>'
+        divs+='</div>'
+        //标题蒙层
+        divs+='<div class="Porridgemeng">'
+          divs+='<div class="PorridgeBox">'
+            divs+='<p class="PorridgeHeader">粥品香坊(大运村)</p>'
+            divs+='<div class="Porridgestart">'
+              divs+='<img src="img/star36_on@2x.png" alt="">'
+              divs+='<img src="img/star36_on@2x.png" alt="">'
+              divs+='<img src="img/star36_on@2x.png" alt="">'
+              divs+='<img src="img/star36_on@2x.png" alt="">'
+              divs+='<img src="img/star36_off@2x.png" alt="">'
+            divs+='</div>'
+            divs+='<p class="PorridgeNows">'
+              divs+='<span class="PorridgSpanO"></span>'
+              divs+='<span class="PorridgSpanT">优惠信息</span>'
+              divs+='<span class="PorridgSpanC"></span>'
+            divs+='</p>'
+            divs+='<div class="PorridgeActivity">'
+              divs+='<p><span><img src="img/decrease_2@2x.png" alt=""></span><span>在线支付满28减5,满50减10</span></p>'
+              divs+='<p><span><img src="img/discount_2@2x.png" alt=""></span><span>单人精彩赛</span></p>'
+              divs+='<p><span><img src="img/discount_2@2x.png" alt=""></span><span>清肺雪梨汤8折抢购</span></p>'
+              divs+='<p><span><img src="img/special_2@2x.png" alt=""></span><span>特价饮品八折抢购</span></p>'
+              divs+='<p><span><img src="img/special_2@2x.png" alt=""></span><span>单人特设套餐</span></p>'
+            divs+='</div>'
+            divs+='<p class="PorridgeNows">'
+              divs+='<span class="PorridgSpanO"></span>'
+              divs+='<span class="PorridgSpanT">商家公告</span>'
+              divs+='<span class="PorridgSpanC"></span>'
+            divs+='</p>'
+            divs+='<div class="PorridgeText">香坊其烹饪粥料的秘方源于中国千年古法，在融和现代制作工艺，由世界烹饪大师屈浩先生领衔研发。坚守纯天然、0添加的良心品质深得消费者青睐，发展至今成为粥类的引领品牌。是2008年奥运会和2013年园博会指定餐饮服务商。 </div>'
+          divs+='</div>'
+          divs+='<div class="PorridgeDown">X</div>'
+        divs+='</div>'
+        //单个商品跳转
+        divs+='<div class="outfood">'
+          divs+='<i class="iconfont icon-fanhui"></i>'
+          divs+='<img src="http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750" alt="" class="outfoodimg">'
+          divs+='<div class="outfoodHeader">'
+            divs+='<p class="outfoodaTop">皮蛋瘦肉粥</p>'
+            divs+='<p class="outfoodaptwo">月售1130份<span>好评100%</span></p>'
+            divs+='<div class="outfoodathree">'
+              divs+='<p class="outfoodapp"><span class="outfoodMoney">￥24</span><span>￥28</span></p>'
+              divs+='<p class="outfoodcar">加入购物车</p>'
+            divs+='</div>'
+          divs+='</div>'
+          divs+='<div class="kong"></div>'
+          divs+='<div class="outfoodb">'
+            divs+='<div class="outfoodbdiv">商品介绍<p class="outfoodp">香坊其烹饪粥料的秘方源于中国千年古法，在融和现代制作工艺，由世界烹饪大师屈浩先生领衔研发。坚守纯天然、0添加的良心品质深得消费者青睐，发展至今成为粥类的引领品牌。是2008年奥运会和2013年园博会指定餐饮服务商。</p></div>'
+          divs+='</div>'
+          divs+='<div class="kong"></div>'
+          divs+='<div class="outfoodc">'
+            divs+='<p class="outfoodp">商品评价</p>'
+            divs+='<div class="evaluate_top">'
+              divs+='<span class="all">全部57</span>'
+              divs+='<span class="satisfaction">满意47</span>'
+              divs+='<span class="nosatisfaction">不满意10</span>'
+            divs+='</div>'
+            divs+='<p class="outfoodcp"><i class="iconfont icon-ok"></i>只看有内容的评论</p>'
+          divs+='</div>'
+          divs+='<div class="outfoodd">'
+            divs+='<div class="outfooddone">'
+              divs+='<div class="outfooddTime">'
+                divs+='<p>2017-07-07 12:22</p>'
+                divs+='<p><span>3********2</span><img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt=""></p>'
+              divs+='</div>'
+              divs+='<p class="evaluatePfour">'
+                divs+='<i class="iconfont icon-dianzan11"></i>'
+                divs+='<span class="evaluatePp">味道不错，就是有点咸！</span>'
+              divs+='</p>'
+            divs+='</div>'
+          divs+='</div>'
+        $("body").html(divs);
+
+        //单个商品跳转
+        var Aa = "";bb="";cc="";  
+        $(".ulTwo").click(function(){
+          Aa = $(this).children().find(".shopgood").html();
+          bb =  $(this).children().children().find("img").prevObject[0].currentSrc;
+          console.log($(this).children().children().find("img"))
+          cc = $(this).children().find(".nowsPrice").html()
+          $(".outfoodMoney").html(cc)
+          $(".outfoodimg").attr("src",bb)
+          $(".outfoodaTop").html( Aa)
+        })
+        //js部分
+        //页面跳转
+        $(".nave a").click(function(){
+          $(this).addClass("on").siblings().removeClass("on") 
+        })
+        $(".ashopO").click(function(){
+          $(".bigBox").show();
+          $(".bigBoxx").hide();
+          $(".shopThree").hide();
+        })
+        $(".ashopT").click(function(){
+          $(".bigBox").hide();
+          $(".shopThree").hide();
+          $(".bigBoxx").show();
+        })
+        $(".ashopTh").click(function(){
+          $(".bigBox").hide();
+          $(".bigBoxx").hide();
+          $(".shopThree").show();
+        })
+        //数量加的点击事件
+        $(".icon-jia").click(function(){
+          var num=parseInt($(this).prev(".SpanMount").html());
+          num++;
+          if(num==1){
+            $(this).prev(".SpanMount").show();
+            $(this).prev().prev(".icon-jian").show();
+          }
+          $(this).prev(".SpanMount").html(num);
+          moneyAll();
+        })
+        //数量减
+        $(".icon-jian").click(function(){
+          var num=parseInt($(this).next(".SpanMount").html());
+          num--;
+          if(num==-1){
+            num=0;
+            $(this).next(".SpanMount").hide();
+            $(this).hide();
+          }
+          $(this).next(".SpanMount").html(num);
+          moneyAll();
+        })
+        //商店公告蒙层框
+        $(".header-box").click(function(){
+          $(".Porridgemeng").show();
+        })
+        $(".advertisement").click(function(){
+          $(".Porridgemeng").show();
+        })
+        $(".PorridgeDown").click(function(){
+          $(".Porridgemeng").hide();
+        })
+        //价格蒙层框
+        $(".footerLeft").click(function(){
+          $(".meng").show();
+        })
+        $(".mengshop").click(function(){
+          $(".meng").hide();
+        })
+        $(".Spanmove").click(function(){
+          $(".meng").hide();
+          $(".SpanMount").html(0);
+          $(".spice").html("￥ 0");
+          $(".spice").css("color","rgba(255, 255, 255, 0.4)");
+          $(".footerNum").hide();
+          $(".car").css("background","rgba(255, 255, 255, 0.4)");
+          $(".car i").css("color","black");
+          $(".footerRight").html("￥20元起送");
+        })
+        //左边点击事件的导航
+        $("aside ul li").click(function(){
+          $(this).css("background","white").siblings().css("background","");
+          $("section").animate({scrollTop:$("section ul .ulFirst").eq($(this).index())[0].offsetTop - 192 },'slow')  
+          // $("section").scrollTop($("section ul .ulFirst").eq($(this).index())[0].offsetTop - 192 )
+        })
+        //单个商品跳转
+        $(".goodPicture").click(function(){
+          $(".outfood").show();
+        })
+        $(".icon-fanhui").click(function(){
+          $(".outfood").hide();
+        })
+        //计算价格
+        function moneyAll(){
+          var allmoney=0;allNum=0;
+          $(".ulTwo .SpanMount").each(function(){
+            if(parseInt($(this).html()) > 0){
+              var num1=parseInt($(this).html());
+              var money1=parseFloat($(this).parent().prev().html().substring(1));
+              allmoney+=num1*money1;
+              allNum+=num1;
+              $(".spice").css("color","white");
+              $(".car").css("background","rgb(0,160,220)");
+              $(".icon-gouwuche").css("color","white");
+              $(".footerNum").show(); 
+              $(".goodNum .SpanMount").html(allNum);
+              // $(this).parent().prev().prev().html("￥" + allmoney);
+            }
+          })
+          $(".footerNum").html(allNum);
+          $(".spice").html("￥" + allmoney);
+          if(allmoney < 24){
+            $(".footerRight").html("还差￥" + (24-allmoney) + "起送");
+            $(".footerRight").css("color","white")
+          }else{
+            $(".footerRight").html("很高兴为您服务")
+            $(".footerRight").css("color","#1296db")
+          }
+        }
+        //轮播
+        var mySwiper = new Swiper('.swiper-containe', {
+          autoplay:true,
+        });
+        var mySwiper = new Swiper('.swiper-container', {
+          autoplay:true,
+        });
+      } 
+    })
+  </script>
+</body>
+</html>

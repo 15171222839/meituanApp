@@ -1,0 +1,1159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*********头部***********/
+header .top {
+  padding: 0.48rem 0.24rem 0.36rem 0.48rem;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+header .top .logo {
+  width: 1.28rem;
+  height: 1.28rem;
+  border-radius: 4px;
+}
+header .top .logo img {
+  width: 1.28rem;
+  height: 1.28rem;
+}
+header .top .logo-text {
+  overflow: hidden;
+  padding: 0 0 0 0.32rem;
+}
+header .top .logo-text h2 {
+  font-size: 0.32rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+header .top .logo-text h2 span {
+  width: 0.6rem;
+  height: 0.36rem;
+  vertical-align: middle;
+}
+header .top .logo-text h2 span img {
+  width: 0.6rem;
+  height: 0.36rem;
+  vertical-align: middle;
+}
+header .top .logo-text h2 .foot {
+  padding-left: 0.12rem;
+}
+header .top .logo-text .timer {
+  font-size: 0.24rem;
+  line-height: 1;
+  color: #ffffff;
+  font-weight: 200;
+  margin-bottom: 0.2rem;
+  margin-top: 0.16rem;
+}
+header .top .logo-text .decrease {
+  font-size: 0.20rem;
+  line-height: 0.24rem;
+  color: #ffffff;
+  font-weight: 200;
+}
+header .top .logo-text .decrease .decrease_picture {
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  margin-right: 0.08rem;
+}
+header .top .logo-text .decrease .decrease_picture img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  margin-right: 0.08rem;
+}
+header .top .logo-text .decrease .decrease_text {
+  vertical-align: middle;
+}
+header .header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.4rem;
+  background: url(http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg) 0 0 no-repeat;
+  background-size: 100%;
+  filter: blur(10px);
+}
+header .header-mengchen {
+  width: 100%;
+  height: 2.68rem;
+  position: absolute;
+  background-color: rgba(7, 17, 27, 0.5);
+  z-index: 1;
+}
+header .advertisement {
+  width: 100%;
+  height: 0.56rem;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-items: center;
+  background-color: rgba(7, 17, 27, 0.2);
+  font-size: 0.2rem;
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 0.56px;
+  z-index: 2;
+  position: relative;
+}
+header .advertisement .advertisement_picture img {
+  width: 0.44rem;
+  height: 0.24rem;
+  margin-left: 0.24rem;
+  margin-right: 0.08rem;
+}
+header .advertisement .advertisement_text {
+  display: inline-block;
+  width: 100%;
+  height: 0.56rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-items: center;
+  font-size: 0.2rem;
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 0.56rem;
+  margin-right: 0.38rem;
+}
+header .advertisement .top-tu {
+  position: absolute;
+  right: 0.26rem;
+}
+header .header-box {
+  width: 0.8rem;
+  height: 0.48rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.2rem;
+  color: #ffffff;
+  line-height: 0.48rem;
+  text-align: center;
+  z-index: 9;
+  border-radius: 0.16rem;
+  position: absolute;
+  right: 0.26rem;
+  top: 1.46rem;
+}
+/*******************导航**********************/
+nav .nave {
+  width: 100%;
+  height: 0.8rem;
+  background: white;
+  line-height: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+nav .nave a {
+  font-size: 0.28rem;
+  color: #4d555d;
+}
+nav .nave .on {
+  color: #f01414;
+}
+.dis {
+  display: none;
+}
+/*******************中间文本内容****************/
+.bigBox {
+  display: flex;
+  height: 8.6rem;
+}
+.bigBox aside {
+  width: 1.6rem;
+  height: 8.6rem;
+  overflow-y: auto;
+  background: #f3f5f7;
+}
+.bigBox aside ul li {
+  padding: 0.4rem 0.24rem 0 0.24rem;
+  width: 1.6rem;
+  height: 1.08rem;
+  font-size: 0.24rem;
+  color: #4d555d;
+  font-weight: 200;
+  line-height: 0.28rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.bigBox aside ul li p img {
+  width: 0.24rem;
+  height: 0.24rem;
+  vertical-align: middle;
+  margin-left: 0.09rem;
+}
+.bigBox section {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+  height: 8.6rem;
+}
+.bigBox section ul .ulFirst {
+  width: 100%;
+  height: 0.52rem;
+  background: #f3f5f7;
+  padding-left: 0.28rem;
+  font-size: 0.24rem;
+  color: #93999f;
+  line-height: 0.52rem;
+  border-left: 4px solid #d9dde1;
+}
+.bigBox section ul .ulTwo {
+  position: relative;
+  padding: 0.36rem;
+  display: flex;
+  border: 1px solid rgba(7, 17, 27, 0.1);
+}
+.bigBox section ul .ulTwo .goodPicture {
+  width: 1rem;
+  height: 1rem;
+}
+.bigBox section ul .ulTwo .goodPicture img {
+  width: 1rem;
+  height: 1rem;
+}
+.bigBox section ul .ulTwo .shop {
+  padding: 0.04rem 0 0 0.2rem;
+}
+.bigBox section ul .ulTwo .shop p {
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+}
+.bigBox section ul .ulTwo .shop .shopgood {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.28rem;
+}
+.bigBox section ul .ulTwo .shop .shopname {
+  padding: 0.16rem 0 0.16rem 0;
+}
+.bigBox section ul .ulTwo .shop .shopbuy .Praise {
+  padding-left: 0.16rem;
+}
+.bigBox section ul .ulTwo .shop .money .nowsPrice {
+  font-size: 0.28rem;
+  color: red;
+  font-weight: 700;
+  line-height: 0.48rem;
+}
+.bigBox section ul .ulTwo .shop .money .goesPrice {
+  font-size: 0.2rem;
+  color: #93999f;
+  font-weight: 700;
+  line-height: 0.48rem;
+  padding-left: 0.16rem;
+  text-decoration: line-through;
+}
+.bigBox section ul .ulTwo .shop .money .iSpan {
+  right: 0.4rem;
+  position: absolute;
+  padding-top: 0.16rem;
+}
+.bigBox section ul .ulTwo .shop .money .iSpan .SpanMount {
+  font-size: 0.36rem;
+}
+.bigBox section ul .ulTwo .shop .money .iSpan .icon-jian {
+  width: 0.48rem;
+  height: 0.48rem;
+  font-size: 0.42rem;
+}
+.bigBox section ul .ulTwo .shop .money .iSpan .icon-jian:before {
+  content: "\e602";
+  color: #1296db;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.bigBox section ul .ulTwo .shop .money .iSpan .icon-jia {
+  width: 0.48rem;
+  height: 0.48rem;
+  font-size: 0.4rem;
+}
+.bigBox section ul .ulTwo .shop .money .iSpan .icon-jia:before {
+  content: "\e601";
+  color: #1296db;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+/****************底部******************/
+footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  z-index: 100;
+}
+footer .footerNum {
+  width: 0.48rem;
+  height: 0.32rem;
+  font-size: 0.18rem;
+  font-weight: 700;
+  color: white;
+  line-height: 0.32rem;
+  position: absolute;
+  background-color: #f01414;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  margin-left: 1rem;
+  top: -0.16rem;
+  z-index: 99;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+}
+footer .footerLeft {
+  flex: 1;
+  height: 1.16rem;
+  background: #141d27;
+}
+footer .footerLeft .car {
+  position: absolute;
+  width: 1.16rem;
+  height: 1.16rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 0.12rem solid #141d27;
+  margin: -7px 0.36rem 0.16rem 0.36rem;
+}
+footer .footerLeft .car i {
+  font-size: 0.48rem;
+  line-height: 0.48rem;
+  margin: 0.1rem -0.25rem;
+}
+footer .footerLeft .car .icon-gouwuche:before {
+  content: "\e600";
+  margin-top: 0.24rem;
+  margin-left: 0.44rem;
+  position: absolute;
+}
+footer .footerLeft .footerMoney {
+  top: -0.3rem;
+  left: 0;
+  position: absolute;
+}
+footer .footerLeft .footerMoney .spice {
+  font-size: 0.32rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  line-height: 0.48rem;
+  padding-left: 1.6rem;
+}
+footer .footerLeft .footerMoney .Delivery {
+  padding-left: 0.24rem;
+  font-size: 0.32rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  line-height: 0.48rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+footer .footerRight {
+  width: 2.1rem;
+  height: 1.16rem;
+  font-size: 0.24rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.16rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+/*****************蒙层******************/
+.meng {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background: rgba(7, 17, 27, 0.6);
+  position: absolute;
+  display: none;
+}
+.mengul {
+  width: 100%;
+  height: 6.11rem;
+  overflow-y: auto;
+  bottom: 1.16rem;
+  left: 0;
+  position: absolute;
+  color: white;
+  z-index: 9;
+}
+.mengul li:nth-child(2) {
+  padding-top: 0.8rem;
+}
+.menglifirst {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  background: #f3f5f7;
+  font-size: 0.28rem;
+  font-weight: 200;
+  color: #07111b;
+  line-height: 0.8rem;
+  padding: 0 0.36rem 0 0.36rem;
+  border: 1px solid rgba(7, 17, 27, 0.1);
+  position: fixed;
+}
+.menglifirst span:nth-child(2) {
+  font-size: 0.24rem;
+  color: #00a0dc;
+}
+.menglitwo {
+  padding: 0 0.36rem 0 0.36rem;
+  background: white;
+}
+.menglitwo .mengGood {
+  width: 100%;
+  height: 0.96rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(7, 17, 27, 0.1);
+}
+.menglitwo .mengGood .goodName {
+  font-size: 0.28rem;
+  color: #07111b;
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
+  line-height: 0.48rem;
+}
+.menglitwo .mengGood .goodNum {
+  font-size: 0.48rem;
+  color: #07111b;
+  line-height: 0.48rem;
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
+}
+.menglitwo .mengGood .goodNum .goodMoney {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #f01414;
+  line-height: 0.48rem;
+}
+.menglitwo .mengGood .goodNum .icon-jian {
+  font-size: 0.48rem;
+  color: #00a0dc;
+}
+.menglitwo .mengGood .goodNum .icon-jia {
+  font-size: 0.48rem;
+  color: #00a0dc;
+}
+.menglitwo .mengGood .goodNum .SpanMount {
+  color: grey;
+}
+/*******************评价页面*********************/
+.bigBoxx {
+  height: 8.6rem;
+  overflow-y: auto;
+  display: none;
+}
+.bigBoxx .assessFen {
+  width: 100%;
+  height: 2.12rem;
+  padding: 0.36rem 0.48rem 0.36rem 0;
+  display: flex;
+  border-bottom: 2px solid rgba(7, 17, 27, 0.1);
+}
+.bigBoxx .assessFen .assessLeft {
+  width: 2.75rem;
+  border-right: 1px solid rgba(7, 17, 27, 0.1);
+  text-align: center;
+}
+.bigBoxx .assessFen .assessLeft .assessThree {
+  font-size: 0.48rem;
+  color: #ff9900;
+  line-height: 0.56rem;
+  padding-bottom: 0.12rem;
+}
+.bigBoxx .assessFen .assessLeft .assessAll {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.24rem;
+  padding-bottom: 0.16rem;
+}
+.bigBoxx .assessFen .assessLeft .assessShop {
+  font-size: 0.2rem;
+  color: #07111b;
+  line-height: 0.2rem;
+  padding-bottom: 0.12rem;
+}
+.bigBoxx .assessFen .assessRight {
+  flex: 1;
+  padding-left: 0.48rem;
+}
+.bigBoxx .assessFen .assessRight .SpOne {
+  height: 0.36rem;
+  display: flex;
+  justify-content: space-between;
+}
+.bigBoxx .assessFen .assessRight .SpOne .Spdiv {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.36rem;
+}
+.bigBoxx .assessFen .assessRight .SpOne .start {
+  padding-left: 0.24rem;
+  display: flex;
+}
+.bigBoxx .assessFen .assessRight .SpOne .start img {
+  width: 0.36rem;
+  height: 0.36rem;
+}
+.bigBoxx .assessFen .assessRight .SpOne .startGold {
+  padding-left: 0.24rem;
+  font-size: 0.24rem;
+  color: #ff9900;
+  line-height: 0.36rem;
+}
+.bigBoxx .assessFen .assessRight .SpTwo {
+  padding-top: 0.16rem;
+}
+.bigBoxx .assessFen .assessRight .SpThree {
+  height: 0.36rem;
+  display: flex;
+  padding-top: 0.32rem;
+}
+.bigBoxx .assessFen .assessRight .SpThree .Spdiv {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.36rem;
+}
+.bigBoxx .assessFen .assessRight .SpThree .Spdivtwo {
+  padding-left: 0.36rem;
+  font-size: 0.24rem;
+  color: #93999f;
+  line-height: 0.36rem;
+}
+.bigBoxx .kong {
+  width: 100%;
+  height: 0.36rem;
+  background: #f3f5f7;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.bigBoxx .evaluate {
+  width: 100%;
+}
+.bigBoxx .evaluate .evaluate_top {
+  width: 99.28%;
+  padding-left: 0.36rem;
+  padding-bottom: 0.36rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+  padding-top: 0.26rem;
+}
+.bigBoxx .evaluate .evaluate_top p {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+  padding-bottom: 0.24rem;
+}
+.bigBoxx .evaluate .evaluate_top span {
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.16rem;
+  font-size: 0.24rem;
+  color: #93999f;
+  line-height: 0.36rem;
+  width: 1.15rem;
+  height: 0.72rem;
+  background: #1296db;
+  color: white;
+}
+.bigBoxx .evaluate .evaluate_top span:nth-child(2) {
+  background: #ccfff8;
+  color: grey;
+}
+.bigBoxx .evaluate .evaluate_top span:nth-child(3) {
+  background: #e9ebec;
+  color: grey;
+}
+.bigBoxx .evaluate .evaluate_bottom {
+  width: 100%;
+  height: 0.72rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.bigBoxx .evaluate .evaluate_bottom .icon-ok {
+  color: grey;
+  padding-left: 0.36rem;
+  padding-top: 0.1rem;
+}
+.bigBoxx .evaluate .evaluateul {
+  padding: 0 0.36rem 0 0.36rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli {
+  padding: 0.36rem 0 0.36rem 0;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+  display: flex;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliOne {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  margin-right: 0.24rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliOne img {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo {
+  flex: 1;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePone {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.08rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePone .pSpanc {
+  font-size: 0.2rem;
+  color: #07111b;
+  line-height: 0.24rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePone .pSpans {
+  font-size: 0.2rem;
+  font-weight: 200;
+  color: #93999f;
+  line-height: 0.24rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePtwo {
+  padding-bottom: 0.12rem;
+  display: flex;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePtwo span {
+  font-size: 0.2rem;
+  font-weight: 200;
+  color: #93999f;
+  line-height: 0.24rem;
+  padding-right: 0.12rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePtwo span img {
+  width: 0.24rem;
+  height: 0.24rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePthree {
+  padding-bottom: 0.16rem;
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.36rem;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePfour {
+  width: 90%;
+  display: flex;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePfour .icon-dianzan11 {
+  width: 0.32rem;
+  height: 0.32rem;
+  color: #00a0dc;
+}
+.bigBoxx .evaluate .evaluateul .evaluateli .evaluateliTwo .evaluatePfour span {
+  font-size: 0.18rem;
+  height: 0.32rem;
+  margin-left: 0.16rem;
+  border: 1px solid rgba(7, 17, 27, 0.1);
+  text-align: center;
+  border-radius: 2px;
+  color: #93999f;
+  background: #ffffff;
+}
+/*****************商家******************/
+.shopThree {
+  height: 8.6rem;
+  overflow-y: auto;
+  display: none;
+  /************公告与活动**************/
+  /***********优惠价格**************/
+  /**********商家实景************/
+  /**********商家信息************/
+}
+.shopThree .shopTop {
+  padding: 0.36rem 0 0.36rem 0;
+  border-bottom: 2px solid rgba(7, 17, 27, 0.1);
+}
+.shopThree .shopTop .shopdivOne {
+  margin: 0 0.36rem 0 0.36rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.shopThree .shopTop .shopdivOne .shopdivP {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.16rem;
+}
+.shopThree .shopTop .shopdivOne .shopdivP span {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.58rem;
+}
+.shopThree .shopTop .shopdivOne .shopdivP .icon-hongxin {
+  font-size: 0.48rem;
+  color: #f01414;
+  line-height: 0.48rem;
+}
+.shopThree .shopTop .shopdivOne .shopdivDiv {
+  padding-bottom: 0.36rem;
+  display: flex;
+  justify-content: space-between;
+}
+.shopThree .shopTop .shopdivOne .shopdivDiv .shopdivLeft {
+  display: flex;
+}
+.shopThree .shopTop .shopdivOne .shopdivDiv .shopdivLeft div {
+  font-size: 0.2rem;
+  color: #4d555d;
+  line-height: 0.36rem;
+  padding-right: 0.14rem;
+}
+.shopThree .shopTop .shopdivOne .shopdivDiv .shopdivLeft .Spanstart {
+  height: 0.36rem;
+}
+.shopThree .shopTop .shopdivOne .shopdivDiv .shopdivLeft .Spanstart img {
+  width: 0.36rem;
+  height: 0.36rem;
+}
+.shopThree .shopTop .shopdivOne .shopdivDiv .shopdivRight {
+  font-size: 0.2rem;
+  color: #4d555d;
+  line-height: 0.20rem;
+}
+.shopThree .shopTop .shopdivTwo {
+  margin: 0.36rem 0 0.36rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.shopThree .shopTop .shopdivTwo .shop20,
+.shopThree .shopTop .shopdivTwo .shop4,
+.shopThree .shopTop .shopdivTwo .shop39 {
+  border-right: 1px solid rgba(7, 17, 27, 0.1);
+  width: 33.33%;
+}
+.shopThree .shopTop .shopdivTwo .shop20 p,
+.shopThree .shopTop .shopdivTwo .shop4 p,
+.shopThree .shopTop .shopdivTwo .shop39 p {
+  padding-top: 0.08rem;
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+}
+.shopThree .shopTop .shopdivTwo .shop20 p span,
+.shopThree .shopTop .shopdivTwo .shop4 p span,
+.shopThree .shopTop .shopdivTwo .shop39 p span {
+  display: inline-block;
+  font-size: 0.48rem;
+  font-weight: 200;
+  color: #07111b;
+  line-height: 0.48rem;
+}
+.shopThree .kong {
+  width: 100%;
+  height: 0.36rem;
+  background: #f3f5f7;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.shopThree .active .mengDiv3 {
+  padding: 0.36rem 0.6rem 0.32rem 0.36rem;
+  flex: 1;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.shopThree .active .mengDiv3 .meng-ul {
+  list-style: none;
+}
+.shopThree .active .mengDiv3 li:nth-child(1) {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+}
+.shopThree .active .mengDiv3 li:nth-child(2) {
+  margin-top: 0.16rem;
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #f01414;
+  line-height: 0.48rem;
+  margin-left: 0.24rem;
+}
+.shopThree .mengDiv2 {
+  width: 100%;
+  padding: 0rem 0.6rem 0rem 0.6rem;
+  border-bottom: 2px solid rgba(7, 17, 27, 0.1);
+}
+.shopThree .mengDiv2 .meng_ul {
+  list-style: none;
+}
+.shopThree .mengDiv2 .meng_ul li {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #07111b;
+  line-height: 0.32rem;
+  margin-top: 0.32rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.shopThree .mengDiv2 .meng_ul li p {
+  display: inline-block;
+  vertical-align: top;
+}
+.shopThree .mengDiv2 .meng_ul li p img {
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.shopThree .mengDiv2 .meng_ul li p:nth-child(2) {
+  line-height: 0.32rem;
+}
+.shopThree .mengDiv2 .meng_ul .mengnews {
+  text-align: center;
+  font-size: 0.24rem;
+  font-weight: 700;
+  color: white;
+  line-height: 0.24rem;
+}
+.shopThree .spec6_picture {
+  overflow: hidden;
+  padding: 0.36rem 0 0.36rem 0.36rem;
+}
+.shopThree .spec6_picture ul {
+  list-style: none;
+}
+.shopThree .spec6_picture ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+}
+.shopThree .spec6_picture ul li p > img {
+  width: 2.3rem;
+  height: 1.8rem;
+}
+.shopThree .shopnews {
+  padding: 0.24rem 0.36rem 0 0.36rem;
+}
+.shopThree .shopnews ul {
+  list-style: none;
+}
+.shopThree .shopnews ul li:nth-child(1) {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.shopThree .shopnews ul li:nth-child(2),
+.shopThree .shopnews ul li:nth-child(3),
+.shopThree .shopnews ul li:nth-child(4),
+.shopThree .shopnews ul li:nth-child(5) {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #07111b;
+  line-height: 0.32rem;
+  margin-top: 0.32rem;
+  margin-bottom: 0.32rem;
+  margin-left: 0.24rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+/************粥品香坊蒙层***************/
+.Porridgemeng {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background: rgba(7, 17, 27, 0.8);
+  position: absolute;
+  display: none;
+}
+.Porridgemeng .PorridgeBox {
+  padding: 1.28rem 0.72rem 0.64rem 0.72rem;
+}
+.Porridgemeng .PorridgeBox .PorridgeHeader {
+  text-align: center;
+  font-size: 0.32rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 0.32rem;
+  margin-bottom: 0.32rem;
+}
+.Porridgemeng .PorridgeBox .Porridgestart {
+  height: 0.48rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.56rem;
+}
+.Porridgemeng .PorridgeBox .Porridgestart img {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.Porridgemeng .PorridgeBox .PorridgeNows {
+  display: flex;
+  margin-bottom: 0.48rem;
+}
+.Porridgemeng .PorridgeBox .PorridgeNows .PorridgSpanT {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 0.28rem;
+  vertical-align: middle;
+  padding: 0 0.24rem 0 0.2rem;
+}
+.Porridgemeng .PorridgeBox .PorridgeNows .PorridgSpanC,
+.Porridgemeng .PorridgeBox .PorridgeNows .PorridgSpanO {
+  width: 2.24rem;
+  height: 0.06rem;
+  margin-top: 0.06rem;
+  color: rgba(255, 255, 255, 0.2);
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.2);
+}
+.Porridgemeng .PorridgeBox .PorridgeActivity {
+  padding: 0 0.24rem 0.56rem 0.24rem;
+}
+.Porridgemeng .PorridgeBox .PorridgeActivity p {
+  display: flex;
+  margin-bottom: 0.24rem;
+}
+.Porridgemeng .PorridgeBox .PorridgeActivity p span {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #ffffff;
+  line-height: 0.24rem;
+  vertical-align: middle;
+}
+.Porridgemeng .PorridgeBox .PorridgeActivity p span img {
+  width: 0.32rem;
+  height: 0.32rem;
+  vertical-align: middle;
+}
+.Porridgemeng .PorridgeBox .PorridgeActivity p span:nth-child(2) {
+  padding-left: 0.12rem;
+}
+.Porridgemeng .PorridgeBox .PorridgeText {
+  padding: 0 0.24rem 0  0.24rem;
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #ffffff;
+  line-height: 0.48rem;
+  width: 100%;
+  height: 3rem;
+  overflow-y: auto;
+}
+.Porridgemeng .PorridgeDown {
+  width: 100%;
+  position: absolute;
+  bottom: 0.64rem;
+  font-size: 0.64rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+/****************单个商品*******************/
+.outfood {
+  background: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  position: absolute;
+  display: none;
+}
+.outfood .icon-fanhui {
+  color: #00a0dc;
+  width: 0.36rem;
+  height: 0.36rem;
+  font-size: 0.72rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.outfood .outfoodimg {
+  width: 100%;
+  height: 7.5rem;
+}
+.outfood .outfoodHeader {
+  padding: 0.36rem;
+  border-bottom: 2px solid rgba(7, 17, 27, 0.1);
+}
+.outfood .outfoodHeader .outfoodaTop {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+  margin-bottom: 0.16rem;
+}
+.outfood .outfoodHeader .outfoodaptwo {
+  display: flex;
+  margin-bottom: 0.36rem;
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+}
+.outfood .outfoodHeader .outfoodaptwo span {
+  padding-left: 0.24rem;
+}
+.outfood .outfoodHeader .outfoodathree {
+  display: flex;
+  justify-content: space-between;
+}
+.outfood .outfoodHeader .outfoodathree .outfoodapp {
+  display: flex;
+}
+.outfood .outfoodHeader .outfoodathree .outfoodapp span:nth-child(1) {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #f01414;
+  line-height: 0.48rem;
+}
+.outfood .outfoodHeader .outfoodathree .outfoodapp span:nth-child(2) {
+  padding-left: 0.16rem;
+  font-size: 0.2rem;
+  font-weight: 700;
+  color: #93999f;
+  line-height: 0.48rem;
+  text-decoration: line-through;
+}
+.outfood .outfoodHeader .outfoodcar {
+  width: 1.48rem;
+  height: 0.48rem;
+  border-radius: 0.24rem;
+  font-size: 0.2rem;
+  color: #ffffff;
+  background: #00a0dc;
+  text-align: center;
+  line-height: 0.48rem;
+}
+.outfood .kong {
+  width: 100%;
+  height: 0.32rem;
+  background: #f3f5f7;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.outfood .outfoodb {
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.outfood .outfoodb .outfoodbdiv {
+  padding: 0.36rem;
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+}
+.outfood .outfoodb .outfoodbdiv .outfoodp {
+  padding: 0.12rem 0.16rem 0 0.16rem;
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #4d555d;
+  line-height: 0.48rem;
+}
+.outfood .outfoodc {
+  padding: 0.36rem  0.36rem 0.24rem 0.36rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.outfood .outfoodc .outfoodp {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  margin-bottom: 0.26rem;
+}
+.outfood .outfoodc .evaluate_top {
+  padding-bottom: 0.36rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+}
+.outfood .outfoodc .evaluate_top span {
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.16rem;
+  font-size: 0.24rem;
+  color: #93999f;
+  line-height: 0.36rem;
+  width: 1.15rem;
+  height: 0.72rem;
+  background: #1296db;
+  color: white;
+}
+.outfood .outfoodc .evaluate_top span:nth-child(2) {
+  background: #ccfff8;
+  color: grey;
+}
+.outfood .outfoodc .evaluate_top span:nth-child(3) {
+  background: #e9ebec;
+  color: grey;
+}
+.outfood .outfoodc .outfoodcp {
+  padding-top: 0.24rem;
+  font-size: 0.24rem;
+  color: #93999f;
+  line-height: 0.48rem;
+}
+.outfood .outfoodc .outfoodcp .icon-ok {
+  padding-right: 0.08rem;
+  color: grey;
+}
+.outfood .outfoodd {
+  padding: 0.32rem 0.36rem 1.16rem 0.36rem;
+}
+.outfood .outfoodd .outfooddone {
+  margin-bottom: 0.32rem;
+}
+.outfood .outfoodd .outfooddone .outfooddTime {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.12rem;
+}
+.outfood .outfoodd .outfooddone .outfooddTime p {
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.24rem;
+}
+.outfood .outfoodd .outfooddone .outfooddTime p span {
+  padding-right: 0.12rem;
+}
+.outfood .outfoodd .outfooddone .outfooddTime p img {
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 50%;
+}
+.outfood .outfoodd .outfooddone .evaluatePfour {
+  display: flex;
+  margin-bottom: 0.32rem;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+.outfood .outfoodd .outfooddone .evaluatePfour .icon-dianzan11 {
+  font-size: 0.4rem;
+  color: #1296db;
+  line-height: 0.48rem;
+  padding-right: 0.08rem;
+}
+.outfood .outfoodd .outfooddone .evaluatePfour .evaluatePp {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.52rem;
+}
